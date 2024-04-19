@@ -1,0 +1,16 @@
+.cartDiv{
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartDiv img{
+    cursor: pointer;
+    width: 15%;
+}
+
+.cartDiv p{
+    padding-bottom: 15px;
+    font-size: 22px;
+}
