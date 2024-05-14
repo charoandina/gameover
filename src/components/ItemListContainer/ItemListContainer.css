@@ -1,5 +1,7 @@
-h2{
-    font-size: 30px;
-    text-align: center;
+.itemListContainer{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
 }
 
