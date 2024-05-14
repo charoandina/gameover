@@ -5,29 +5,33 @@
     padding: 20px;
 }
 
-.navbar img{
+.logo-container{
     width: 10%;
 }
 
-.navbar ul{
+.logo {
+    width: 100%;
+}
+
+.categories{
     display: flex;
     width: 80%;
     justify-content: space-around;
 }
 
-.navbar ul li{
+.category-link{
     list-style-type: none;
     color: #fff;
     font-size: 24px;
 }
 
-.navbar a{
+.category-link{
     text-decoration: none;
     color: #fff;
     transition: .5s;
 }
 
-.navbar ul li a:hover{
+.category-link:hover{
     color: #00F6FF;
 }
 

@@ -1,0 +1,27 @@
+.card-details-container{
+    display: flex;
+    background-color: #fff;
+    color: #000;
+    width: 60%;
+    border-radius: 15px;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 2px 5px #cecece;
+}
+
+.img-product{
+    width: 400px;
+}
+
+.item-details{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.product-name{
+    font-size: 28px;
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px #00F6FF;
+}
