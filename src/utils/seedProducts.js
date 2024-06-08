@@ -1,3 +1,6 @@
+import db from "../db/db.js";
+import { addDoc, collection } from "firebase/firestore";
+
 const products = [
     {
         name: "PlayStation 4",
@@ -54,7 +57,7 @@ const products = [
         image: "/src/assets/joycon.png"
     },
     {
-        name: "Joystick Inalámbrico Dualsense Ps5",
+        name: "Joystick Inalámbrico Ps5",
         price: 127000,
         id: "7",
         descripcion: "Experimenta una experiencia de juego inmersiva con el control inalámbrico DualSense para PS5, que ofrece respuesta háptica, gatillos adaptativos dinámicos y un micrófono integrado en un diseño icónico.",
@@ -136,12 +139,10 @@ const products = [
     },
 ]
 
-const getProducts = () => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve(products)
-      }, 2000);
-    });
-  };
-  
-  export default getProducts
+const seedProducts = () => {
+    products.map(({ id, ...rest }) =>{
+    addDoc(collection(db, "products"), rest)
+});
+}
+
+seedProducts();

@@ -1,0 +1,28 @@
+.successorder-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    width: 80%;
+    margin: auto;
+}
+
+.title-success{
+    font-size: 42px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px #00F6FF;
+}
+
+.info-success{
+    font-size: 24px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.id-number{
+    font-size: 36px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
